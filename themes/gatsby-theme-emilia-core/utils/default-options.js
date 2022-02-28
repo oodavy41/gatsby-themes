@@ -3,8 +3,8 @@ module.exports = (themeOptions) => {
   const projectsPath = themeOptions.projectsPath || `content/projects`
   const assetsPath = themeOptions.projectsPath || `content/assets`
   const formatString = themeOptions.formatString || `DD.MM.YYYY`
-  const mdx = typeof themeOptions.mdx === `undefined` ? true : themeOptions.mdx
-  const sharp = typeof themeOptions.sharp === `undefined` ? true : themeOptions.sharp
+  const mdx = typeof themeOptions.mdx === `undefined` ? false : themeOptions.mdx
+  const sharp = typeof themeOptions.sharp === `undefined` ? false : themeOptions.sharp
 
   return {
     basePath,

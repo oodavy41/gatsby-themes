@@ -19,7 +19,7 @@ module.exports = (themeOptions) => {
           path: options.pagesPath,
         },
       },
-      options.mdx && {
+      options.mdx || {
         resolve: `gatsby-plugin-mdx`,
         options: {
           lessBabel: true,
@@ -38,7 +38,7 @@ module.exports = (themeOptions) => {
         },
       },
       `gatsby-transformer-sharp`,
-      options.sharp && {
+      options.sharp || {
         resolve: `gatsby-plugin-sharp`,
         options: {},
       },

@@ -10,8 +10,8 @@ module.exports = (themeOptions) => {
   const showLineNumbers = themeOptions.showLineNumbers !== false
   const showCopyButton = themeOptions.showCopyButton !== false
   const formatString = themeOptions.formatString || `DD.MM.YYYY`
-  const mdx = typeof themeOptions.mdx === `undefined` ? true : themeOptions.mdx
-  const sharp = typeof themeOptions.sharp === `undefined` ? true : themeOptions.sharp
+  const mdx = typeof themeOptions.mdx === `undefined` ? false : themeOptions.mdx
+  const sharp = typeof themeOptions.sharp === `undefined` ? false : themeOptions.sharp
 
   return {
     basePath,
